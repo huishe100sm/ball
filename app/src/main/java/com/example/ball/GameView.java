@@ -122,7 +122,7 @@ public class GameView extends View {
                     mpHit.start();
                 }
                 velocity.setX(velocity.getX() + 1);
-                velocity.setY((velocity.getY() + 1) + -1);
+                velocity.setY((velocity.getY() + 1) * -1);
             }
             canvas.drawBitmap(ball, ballX, ballY, null);
             canvas.drawBitmap(paddle, paddleX, paddleY, null);
